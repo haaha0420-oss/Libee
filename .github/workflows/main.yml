@@ -30,4 +30,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
-          gh workflow run stream2.yml -R ${{ github.repository }}
+          gh workflow run main.yml -R ${{ github.repository }}
