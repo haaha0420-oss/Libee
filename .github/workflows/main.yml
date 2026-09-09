@@ -19,7 +19,7 @@ jobs:
 
       - name: Start Live Stream 2 (Original Quality)
         env:
-          STREAM_KEY: ${{ secrets.STREAM_KEY_2 }}
+          STREAM_KEY: ${{ secrets.STREAM_KEY }}
         run: |
           timeout 21000 ffmpeg -re -stream_loop -1 -i input2.mp4 \
           -c:v copy \
